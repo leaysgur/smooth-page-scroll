@@ -4,7 +4,9 @@
   "description": "In page smooth scroll",
   "main": "./src/smooth-page-scroll",
   "scripts": {
-    "build": "browserify ./src/index.js -o ./dist/smooth-page-scroll.js",
+    "build": "npm run bundle && npm run min",
+    "bundle": "browserify ./src/index.js -o ./dist/smooth-page-scroll.js",
+    "min": "uglifyjs ./dist/smooth-page-scroll.js > ./dist/smooth-page-scroll.min.js",
     "_dev": "../node_modules/watchify/bin/cmd.js ./src/index.js -o ./dist/smooth-page-scroll.js"
   },
   "repository": {
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/leader22/smooth-page-scroll#readme",
   "devDependencies": {
-    "browserify": "^13.1.0"
+    "browserify": "^13.1.0",
+    "uglifyify": "^3.0.3"
   }
 }
