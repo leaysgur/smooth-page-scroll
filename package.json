@@ -1,6 +1,6 @@
 {
   "name": "smooth-page-scroll",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "In page smooth scroll",
   "main": "./src/smooth-page-scroll",
   "scripts": {
