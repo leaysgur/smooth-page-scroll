@@ -47,9 +47,9 @@ finally,
 You can pass options as `install(options)`.
 
 props | type | default | desc
-:---- | :--: | :-----: | :---
+:---: | :--: | :------ | :---
 gapX | number | `40` | Gap for destination posX.
 gapY | number | `40` | Gap for destination posY.
 duration | number | `500` | Duration for scrolling.
-easing | func | `function (t) { return t*(2-t); } }` | Easing function for scrolling.
+easing | func | `t => t*(2-t)` | Easing function for scrolling.
 useHashAsHistory | bool | `true` | If true, pushState on hash has changed.
