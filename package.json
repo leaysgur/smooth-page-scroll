@@ -1,0 +1,27 @@
+{
+  "name": "smooth-page-scroll",
+  "version": "1.0.0",
+  "description": "In page smooth scroll",
+  "main": "./src",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify ./src/index.js -o ./dist/smooth-page-scroll.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leader22/smooth-page-scroll.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leader22/smooth-page-scroll/issues"
+  },
+  "homepage": "https://github.com/leader22/smooth-page-scroll#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0"
+  }
+}

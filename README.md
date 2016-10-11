@@ -6,3 +6,4 @@
 - install/uninstall/update
 - getBoundingClientRect
 - replace -> pushState
+- minビルド
