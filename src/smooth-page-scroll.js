@@ -72,6 +72,7 @@ function _unbindEvent() {
   [].forEach.call($a, function(el) {
     if (el._SPS) {
       el.removeEventListener('click', this, false);
+      delete el._SPS;
     }
   }, this);
 }
