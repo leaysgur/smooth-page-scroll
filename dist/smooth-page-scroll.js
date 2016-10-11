@@ -39,7 +39,7 @@ function install(options) {
   }
 
   this._bindEvent();
-  location.hash.length && this._scrollByHash(location.hash);
+  this._scrollByHash(location.hash);
 }
 
 function uninstall() {
@@ -83,6 +83,8 @@ function _unbindEvent() {
 
 function _scrollByHash(hash) {
   var destEl = document.getElementById(hash.slice(1));
+
+  if (hash.length === 0 || !destEl) { return; }
 
   var offset = destEl.getBoundingClientRect();
   var curX = window.scrollX || window.pageXOffset,
