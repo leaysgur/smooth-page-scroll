@@ -39,7 +39,7 @@ function install(options) {
   }
 
   this._bindEvent();
-  this._scrollByHash(location.hash);
+  location.hash.length && this._scrollByHash(location.hash);
 }
 
 function uninstall() {
