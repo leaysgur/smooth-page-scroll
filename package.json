@@ -13,8 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/leader22/smooth-page-scroll.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["smooth", "scroll", "smooth-scroll"],
+  "author": "leader22",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/leader22/smooth-page-scroll/issues"
