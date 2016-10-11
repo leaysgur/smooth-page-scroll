@@ -34,6 +34,8 @@
     <a href="#c1">c1</a>
     <a href="#c2">c2</a>
     <a href="#c3">c3</a>
+    <button id="install">install</button>
+    <button id="uninstall">uninstall</button>
     <hr>
   </nav>
   <div class="row">
@@ -53,7 +55,14 @@
   </div>
   <script src="../dist/smooth-page-scroll.js"></script>
   <script>
-    window.SmoothPageScroll.install({ useHistoryAsHash: true });
+    document.getElementById('install').addEventListener('click', function() {
+      window.SmoothPageScroll.install({ useHistoryAsHash: true });
+      alert('install!');
+    }, false);
+    document.getElementById('uninstall').addEventListener('click', function() {
+      window.SmoothPageScroll.uninstall();
+      alert('uninstall!');
+    }, false);
   </script>
 </body>
 </html>
