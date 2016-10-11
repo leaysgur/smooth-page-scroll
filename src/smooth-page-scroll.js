@@ -78,8 +78,12 @@ function _unbindEvent() {
 
 function _scrollByHash(hash) {
   var destEl = document.getElementById(hash.slice(1));
+
   var offset = destEl.getBoundingClientRect();
-  destEl && this._scrollTo(offset.left, offset.top, this.options);
+  var curX = window.scrollX || window.pageXOffset,
+      curY = window.scrollY || window.pageYOffset;
+
+  destEl && this._scrollTo(offset.left + curX, offset.top + curY, this.options);
 }
 
 function _scrollTo(x, y, options) {

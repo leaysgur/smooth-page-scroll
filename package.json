@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify ./src/index.js -o ./dist/smooth-page-scroll.js"
+    "build": "browserify ./src/index.js -o ./dist/smooth-page-scroll.js",
+    "_dev": "../node_modules/watchify/bin/cmd.js ./src/index.js -o ./dist/smooth-page-scroll.js"
   },
   "repository": {
     "type": "git",
