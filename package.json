@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "In page smooth scroll",
   "main": "./src/smooth-page-scroll",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify ./src/index.js -o ./dist/smooth-page-scroll.js",
     "_dev": "../node_modules/watchify/bin/cmd.js ./src/index.js -o ./dist/smooth-page-scroll.js"
   },
