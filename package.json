@@ -2,7 +2,7 @@
   "name": "smooth-page-scroll",
   "version": "1.0.0",
   "description": "In page smooth scroll",
-  "main": "./src",
+  "main": "./src/smooth-page-scroll",
   "directories": {
     "test": "test"
   },

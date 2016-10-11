@@ -3,7 +3,5 @@
 ### TODO
 - test/demoページ
 - コードリファクタ
-- install/uninstall/update
-- getBoundingClientRect
-- replace -> pushState
 - minビルド
+- rAF/pushstate/popstate依存
