@@ -5,6 +5,10 @@ Apply smooth scroll for in page link.
 > Note:
 > This lib requires `window.{request,cancel}AnimationFrame`, `history.{push,replace}State`.
 
+## Demo
+
+See https://leader22.github.io/smooth-page-scroll
+
 ## Install
 
 by `npm`.
