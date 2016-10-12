@@ -60,11 +60,11 @@ function handleEvent(ev) {
 }
 
 function _bindEvent() {
-  var inPageUrl = location.origin + location.pathname;
+  var inPageUrl = location.host + location.pathname;
   var $a = document.getElementsByTagName('a');
 
   [].forEach.call($a, function(el) {
-    if (el.origin + el.pathname === inPageUrl && !el._SPS) {
+    if (el.host + el.pathname === inPageUrl && !el._SPS) {
       el.addEventListener('click', this, false);
       el._SPS = true;
     }
@@ -83,6 +83,8 @@ function _unbindEvent() {
 
 function _scrollByHash(hash) {
   var destEl = document.getElementById(hash.slice(1));
+
+  if (hash.length === 0 || !destEl) { return; }
 
   var offset = destEl.getBoundingClientRect();
   var curX = window.scrollX || window.pageXOffset,
