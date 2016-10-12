@@ -9,7 +9,7 @@ Easy replacement for in-page hash-link scrolling.
 
 See https://leader22.github.io/smooth-page-scroll
 
-## Install
+## How to use
 
 by `npm`.
 
@@ -41,6 +41,21 @@ finally,
   Destination
 </div>
 ```
+
+## APIs
+
+### install()
+
+Enable smooth page scroll.
+
+### uninstall()
+
+Disable smooth page scroll.
+
+### update()
+
+Re install smooth page scroll.
+Use this after DOM manipulation(like appending new DOM elements).
 
 ## Options
 
