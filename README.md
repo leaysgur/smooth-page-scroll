@@ -1,6 +1,6 @@
 # smooth-page-scroll
 
-Apply smooth scroll for in page link.
+Easy replacement for in-page hash-link scrolling.
 
 > Note:
 > This lib requires `window.{request,cancel}AnimationFrame`, `history.{push,replace}State`.
@@ -47,7 +47,7 @@ finally,
 You can pass options as `install(options)`.
 
 props | type | default | desc
-:---: | :--: | :------ | :---
+:---- | :--: | :------ | :---
 gapX | number | `40` | Gap for destination posX.
 gapY | number | `40` | Gap for destination posY.
 duration | number | `500` | Duration for scrolling.
