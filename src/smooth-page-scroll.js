@@ -56,11 +56,11 @@ function handleEvent(ev) {
 }
 
 function _bindEvent() {
-  var inPageUrl = location.origin + location.pathname;
+  var inPageUrl = location.host + location.pathname;
   var $a = document.getElementsByTagName('a');
 
   [].forEach.call($a, function(el) {
-    if (el.origin + el.pathname === inPageUrl && !el._SPS) {
+    if (el.host + el.pathname === inPageUrl && !el._SPS) {
       el.addEventListener('click', this, false);
       el._SPS = true;
     }
